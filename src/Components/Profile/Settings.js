@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Styles/Settings.css';
 import { Link} from "react-router-dom";
 import UploadImage from '../UploadImage';
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useForm } from "react-hook-form";
 import Header from '../Header';
@@ -10,7 +10,8 @@ import Header from '../Header';
 
 const Settings = () => {
     
-    const { register, handleSubmit, formState: { errors }, control } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    // const { register, handleSubmit, formState: { errors }, control } = useForm();
     const onSubmit = async (data) => {
         const fileInput = document.getElementById('imgUploader') ;
         const formData = new FormData();

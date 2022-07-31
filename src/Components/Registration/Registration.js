@@ -1,5 +1,6 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// import { useState, useEffect } from 'react';
 import '../../Styles/Registration.css';
 import UploadImage from '../UploadImage';
 import {useForm} from "react-hook-form";
@@ -42,7 +43,7 @@ const Registration = () => {
           );
         const jsonResponse = await response.json();
         // console.log(data);
-        // console.log(jsonResponse);
+        console.log(jsonResponse);
       }
 
     // useEffect(()=>{
@@ -73,9 +74,9 @@ const Registration = () => {
                         <ProgressBar currentStep={currentStep}/>
                         <form id="regForm" onSubmit={handleSubmit(onSubmit)}>
                             
-                            {currentStep==1&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Essential Information </label></p>)}
-                            {currentStep==4&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Information Confirmation</label></p>)}
-                            {(currentStep==1 || currentStep==4 )&& (
+                            {currentStep===1&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Essential Information </label></p>)}
+                            {currentStep===4&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Information Confirmation</label></p>)}
+                            {(currentStep===1 || currentStep===4 )&& (
                                 <div>
                                     <div className="regFormCell">    
                                         <label><span>● </span>Activity name</label>
@@ -147,7 +148,7 @@ const Registration = () => {
                                     }
                                 </div>)
                             }
-                            {currentStep==1&&(
+                            {currentStep===1&&(
                                 <div className="buttons">
                                     <Link to="/" style={{textDecoration:"none"}}>
                                         <button className='backButton'>
@@ -162,8 +163,8 @@ const Registration = () => {
                                 
                                 )}
 
-                            {currentStep==2&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Tell us more about yourself</label></p>)}
-                            {(currentStep==2 || currentStep==4 )&& (
+                            {currentStep===2&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Tell us more about yourself</label></p>)}
+                            {(currentStep===2 || currentStep===4 )&& (
                                 <div>
                                     <div className="regFormCell" >
                                         <label><span>● </span>Organizer/Project</label> 
@@ -248,7 +249,7 @@ const Registration = () => {
                                 </div>)
                             }
 
-                            {currentStep== 2&& (
+                            {currentStep=== 2&& (
                                 <div className="buttons">
                                     <button className='backButton'
                                         onClick={()=>{setCurrentStep(1)}}>
@@ -263,8 +264,8 @@ const Registration = () => {
                             }
 
 
-                            {currentStep==3&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Let's take a look at your badge</label></p>)}
-                            {(currentStep==3 || currentStep==4 ) && (
+                            {currentStep===3&&(<p style={{fontWeight:'bold', fontSize:'large'}}><label>Let's take a look at your badge</label></p>)}
+                            {(currentStep===3 || currentStep===4 ) && (
                             <div>
                                 <div className="regFormCell">
                                     <label><span>●</span>Upload Badge</label>
@@ -314,7 +315,7 @@ const Registration = () => {
                             </div>)
                             }
                                 
-                            {currentStep == 3 && (
+                            {currentStep === 3 && (
                                 <div className="buttons">
                                     <button className='backButton'
                                         onClick={()=>{setCurrentStep(2)}}>
@@ -328,7 +329,7 @@ const Registration = () => {
                                 </div>)
                             }
 
-                            {currentStep==4 && (
+                            {currentStep===4 && (
                                 <div>
                                     <div className="buttons">
                                         <button className='backButton'

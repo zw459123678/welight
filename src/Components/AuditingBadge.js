@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import BadgeProfile from './BadgeProfile';
 import '../Styles/Badge.css';
 
@@ -10,9 +10,9 @@ export const AuditingBadge = (props) => {
     let badgeJson = props.badgeJson;
     let activityName  = props.activityName;
     let badgeAsaId = props.badgeAsaId;
-    let badgeTotal = props.badgeTotal;
-    let badgeHasClaimed = props.badgeHasClaimed;
-    let countdown = props.countdown;
+    // let badgeTotal = props.badgeTotal;
+    // let badgeHasClaimed = props.badgeHasClaimed;
+    // let countdown = props.countdown;
     let badgeImgUrl = props.badgeImgUrl;
 
     const togglePopup = () => {

@@ -7,7 +7,7 @@ const UploadImage = ({img}) => {
     <div >
       {selectedImage && (
         <div>
-        <img id="uploadedImg" style={{width:"100px", height:"100px", borderRadius:"100%"}} src={selectedImage} />
+        <img id="uploadedImg" style={{width:"100px", height:"100px", borderRadius:"100%"}} src={selectedImage} alt={selectedImage} />
         <br />
         <button className="imageRemoveButton" onClick={()=>setSelectedImage(null)}>Remove</button>
         </div>

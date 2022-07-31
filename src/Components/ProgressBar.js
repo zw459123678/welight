@@ -41,7 +41,7 @@ const ProgressBar = props => {
                 <div className="pLine" style={{borderLeft:l12}}></div>
             </div>
             <div className="sDetails">
-                { (props.currentStep == 1)?
+                { (props.currentStep === 1)?
                     (<><span style={{color:"#2AF598",fontWeight:"700"}}>Have In Hand</span><br/><span>Fill In Activities</span></>):
                     (<><span style={{color:"#2AF598",fontWeight:"700"}}>Finished</span><br/><span>Fill In Activities</span></>)
                 }
@@ -84,7 +84,7 @@ const ProgressBar = props => {
                 <div className="pCircle" style={{backgroundImage:"url("+s4Img+")"}}></div>
             </div>
             <div className="sDetails">
-                { (props.currentStep == 4)?
+                { (props.currentStep === 4)?
                     (<><span style={{color:"#2AF598",fontWeight:"700"}}>Have In Hand</span><br/><span>Fill In Activities</span></>):
                     (<><span style={{color:"#676868",fontWeight:"700"}}>Not Performed</span><br/><span style={{color:"#676868"}}>Fill In Activities</span></>)
                 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../Styles/Intro.css';
-import {Link} from "react-router-dom";
-import Button from '@material-ui/core/Button';
+// import {Link} from "react-router-dom";
+// import Button from '@material-ui/core/Button';
 
 export default class Intro extends Component {
     render() {

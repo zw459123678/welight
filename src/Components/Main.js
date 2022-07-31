@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { useIdleTimer } from "react-idle-timer";
 import '../Styles/Main.css';
-import Header from './Header';
+// import Header from './Header';
 import Home from './Home/Home';
 import Registration from './Registration/Registration';
 import MyBadge from './Profile/MyBadge';
@@ -58,7 +58,7 @@ const Main = () => {
                             <div id="copyright">Copyright © 2021 Rentero. All rights reserved</div>
                         </div>
                         <div className='footerRight'>
-                            <div id="contactUs">Contact Us<br />💌 WeLight@gmail.com</div>
+                            <div id="contactUs">Contact Us<br /><br />💌 WeLight@gmail.com</div>
                             <div id="footerShare1"></div>
                             <div id="footerShare2"></div>
                             <div id="footerShare3"></div>

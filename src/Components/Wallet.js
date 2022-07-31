@@ -1,10 +1,10 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../Styles/Wallet.css";
 import {
   Form,
 } from "reactstrap";
 import Connect from "./Connect";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Header from "./Header";
 
 const Wallet = ()=> {

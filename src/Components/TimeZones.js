@@ -2,8 +2,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const TimeZones = props => {
-  const { onChange, value } = props;
-  const { register, handleSubmit, formState: { errors }, trigger } = useForm({mode: "all"});
+  const { onChange } = props;
+//   const { onChange, value } = props;
+  const { register, formState: { errors } } = useForm({mode: "all"});
+//   const { register, handleSubmit, formState: { errors }, trigger } = useForm({mode: "all"});
 
   return (
       <>
